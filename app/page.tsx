@@ -61,7 +61,7 @@ export default function Home() {
                   onClick={scrollToProjects}
                   className="px-8 py-3 bg-white text-black font-bold rounded hover:bg-gray-200 transition-colors"
                 >
-                  Projeleri İncele
+                  Projects
                 </button>
                 <a
                   href="https://github.com/TugberkKaradag"
