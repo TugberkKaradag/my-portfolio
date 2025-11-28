@@ -20,7 +20,7 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
         let delay = 0;
 
         bootLines.forEach((line, index) => {
-            // Her satır rastgele 100-300ms arasında gelsin
+
             delay += Math.random() * 300 + 100;
 
             setTimeout(() => {
@@ -28,7 +28,7 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
             }, delay);
         });
 
-        // Hepsi bitince kapanış
+
         setTimeout(() => {
             onComplete();
         }, delay + 800);

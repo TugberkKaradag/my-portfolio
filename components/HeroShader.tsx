@@ -5,7 +5,7 @@ import { Canvas, useFrame, extend } from '@react-three/fiber';
 import { shaderMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
-// 1. SHADER TANIMI
+
 const WaveShaderMaterial = shaderMaterial(
     {
         uTime: 0,
@@ -112,12 +112,10 @@ function ShaderPlane() {
 
     useFrame((state, delta) => {
         if (materialRef.current) {
-            // 👇 KRİTİK DEĞİŞİKLİK BURADA 👇
-            // Eskiden: += delta (1.0 hızında)
-            // Şimdi: += delta * 0.1 (10 kat daha yavaş)
+
             materialRef.current.uTime += delta * 0.1;
 
-            // Mouse takibini de biraz daha ağırlaştırıp sinematik yaptım (0.02)
+
             materialRef.current.uMouse.x = THREE.MathUtils.lerp(
                 materialRef.current.uMouse.x,
                 (state.pointer.x * 0.5) + 0.5,
