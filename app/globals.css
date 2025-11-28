@@ -83,3 +83,22 @@ textarea,
 .animate-infinite-scroll {
   animation: infinite-scroll 40s linear infinite;
 }
+
+@media (max-width: 768px) {
+  #custom-cursor {
+    display: none !important;
+  }
+}
+
+@media (pointer: coarse) {
+  #custom-cursor {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+
+  * {
+    cursor: auto !important;
+  }
+}

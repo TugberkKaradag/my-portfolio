@@ -16,7 +16,7 @@ export default function ProjectModal({ selectedProject, onClose }: ProjectModalP
         <AnimatePresence>
             {selectedProject && (
                 <>
-                    {/* Arka Plan */}
+
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -33,8 +33,7 @@ export default function ProjectModal({ selectedProject, onClose }: ProjectModalP
                             className="bg-[#111] border border-white/10 w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl relative flex flex-col md:flex-row"
                         >
 
-                            {/* --- DÜZELTİLEN BUTON (KAPAT) --- */}
-                            {/* aria-label ekledik: Artık "Close modal" olarak okunacak */}
+
                             <button
                                 type="button"
                                 onClick={onClose}
@@ -44,7 +43,7 @@ export default function ProjectModal({ selectedProject, onClose }: ProjectModalP
                                 <X size={24} />
                             </button>
 
-                            {/* SOL Taraf: Medya */}
+
                             <div className="w-full md:w-1/2 bg-black flex items-center justify-center bg-grid-white/[0.05] relative overflow-hidden h-64 md:h-auto border-b md:border-b-0 md:border-r border-white/10">
                                 {selectedProject.demoType === 'video' ? (
                                     <video
@@ -60,8 +59,7 @@ export default function ProjectModal({ selectedProject, onClose }: ProjectModalP
                                     <img
                                         src={selectedProject.demoUrl}
                                         alt={selectedProject.title}
-                                        // object-cover yerine object-contain yaptık.
-                                        // bg-black ekledik ki kenarlarda boşluk kalırsa siyah dolsun.
+
                                         className="w-full h-full object-contain bg-black"
                                     />
                                 )}
@@ -69,7 +67,7 @@ export default function ProjectModal({ selectedProject, onClose }: ProjectModalP
                                 <div className={`absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60`} />
                             </div>
 
-                            {/* SAĞ Taraf: İçerik */}
+
                             <div className="w-full md:w-1/2 p-8 flex flex-col">
 
                                 <h2 className={`text-3xl font-bold mb-2 bg-gradient-to-r ${selectedProject.color} bg-clip-text text-transparent`}>

@@ -21,6 +21,9 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Tuğberk Karadağ | Creative Technologist",
   description: "Portfolio of Tuğberk Karadağ - Software Engineer & Creative Technologist",
+  icons: {
+    icon: '/favicon.ico', // Eğer kendi logonu yaparsan buraya koy
+  },
 };
 
 export default function RootLayout({

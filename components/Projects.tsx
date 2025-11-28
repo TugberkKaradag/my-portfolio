@@ -1,15 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
-import { projectsData, Project } from '@/data/projects'; // Project tipini buradan çekiyoruz
+import { projectsData, Project } from '@/data/projects';
 import ProjectModal from './ProjectModal';
 //import useSound from 'use-sound';
 
 export default function Projects() {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-    // Ses efektleri (Dosyaların public/sounds klasöründe olması lazım)
-    // Eğer dosyan yoksa hata vermez ama ses çalmaz.
+
     /*const [playClick] = useSound('/sounds/click.mp3', { volume: 0.5 });
     const [playOpen] = useSound('/sounds/open.mp3', { volume: 0.5 });*/
 
@@ -32,7 +31,7 @@ export default function Projects() {
                     {projectsData.map((project) => (
                         <div
                             key={project.id}
-                            onClick={() => handleCardClick(project)} // Fonksiyonu burada çağırıyoruz
+                            onClick={() => handleCardClick(project)}
                             className={`group relative p-6 border border-white/10 rounded-xl bg-black/40 backdrop-blur-md hover:bg-black/60 transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer ${project.id === 1 ? 'md:col-span-2' : ''}`}
                         >
 

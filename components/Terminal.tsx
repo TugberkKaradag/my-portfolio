@@ -103,7 +103,7 @@ export default function Terminal() {
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             onKeyDown={handleCommand}
-                            className="bg-transparent border-none outline-none text-white flex-1 focus:ring-0 placeholder-gray-700"
+                            className="bg-transparent border-none outline-none text-white flex-1 focus:ring-0 placeholder-gray-700 text-base md:text-sm"
                             spellCheck={false}
                             autoComplete="off"
                         />
