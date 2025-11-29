@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from "next";
 import { Rajdhani, Space_Mono } from "next/font/google";
 import "./globals.css";
@@ -5,8 +6,8 @@ import CustomCursor from "@/components/CustomCursor";
 import * as THREE from 'three';
 import { extend } from '@react-three/fiber';
 import { shaderMaterial } from '@react-three/drei';
-import { Analytics } from "@vercel/analytics/next"
-<Analytics />
+
+
 const rajdhani = Rajdhani({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -41,6 +42,7 @@ export default function RootLayout({
         {children}
         <div className="noise-bg"></div>
         <div className="vignette-layer"></div>
+        <Analytics />
       </body>
     </html>
   );
