@@ -22,10 +22,10 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tuğberk Karadağ | Creative Technologist",
-  description: "Portfolio of Tuğberk Karadağ - Software Engineer & Creative Technologist",
+  title: "Tuğberk Karadağ - Software Engineer",
+  description: "Portfolio of Tuğberk Karadağ - Software Engineer specializing in C++, C#, JUCE, DSP, Web, and Unity development.",
   icons: {
-    icon: '/favicon.ico', // Eğer kendi logonu yaparsan buraya koy
+    icon: '/testicon.ico', // Eğer kendi logonu yaparsan buraya koy
   },
 };
 
