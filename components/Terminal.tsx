@@ -56,7 +56,7 @@ export default function Terminal() {
                     setInput("");
                     return;
                 default:
-                    output = <span className="text-red-400">Command not found: {cmd}. Type 'help'.</span>;
+                    output = <span className="text-red-400">Command not found: {cmd}. Type help.</span>;
             }
 
             setHistory([...history, { cmd, output }]);
