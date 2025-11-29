@@ -51,7 +51,7 @@ export default function Home() {
               <p className="text-xl md:text-2xl font-light text-gray-300 mb-8 max-w-2xl mx-auto">
                 Software Engineer & Creative Technologist <br />
                 <span className="text-sm text-indigo-400 font-mono mt-2 block tracking-widest">
-                  [ C++ :: JUCE :: DSP :: WEB ]
+                  [ C++/C# :: JUCE :: DSP :: WEB :: UNITY ]
                 </span>
               </p>
 
