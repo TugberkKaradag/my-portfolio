@@ -1,5 +1,3 @@
-// data/projects.ts
-
 export type Project = {
     id: number;
     title: string;
@@ -21,7 +19,8 @@ export const projectsData: Project[] = [
         tech: ["C++", "JUCE", "DSP", "Audio Plugin"],
         githubLink: "https://github.com/TugberkKaradag/KaradagReverb",
         demoType: 'image',
-        demoUrl: "./reverb.png",
+
+        demoUrl: "/reverb.png",
         color: "from-blue-500 to-cyan-400"
     },
     {
@@ -32,7 +31,8 @@ export const projectsData: Project[] = [
         tech: ["Unity", "C#", "ShaderLab", "A-RPG"],
         githubLink: "https://github.com/TugberkKaradag/TUFAN",
         demoType: 'video',
-        demoUrl: "./tufan.mp4",
+
+        demoUrl: "/tufan.mp4",
         color: "from-purple-500 to-pink-500"
     },
     {
@@ -43,7 +43,7 @@ export const projectsData: Project[] = [
         tech: ["C++", "Audio DSP", "VST3", "Algorithms"],
         githubLink: "https://github.com/TugberkKaradag",
         demoType: 'image',
-        demoUrl: "./delay.png",
+        demoUrl: "/delay.png",
         color: "from-emerald-400 to-green-600"
     },
     {
@@ -51,10 +51,10 @@ export const projectsData: Project[] = [
         title: "Precision Warfare",
         shortDesc: "Single-player turn-based tactical strategy game.",
         fullDesc: "A tactical strategy game where the player commands units on a grid-based map against AI opponents. The project demonstrates strong architectural patterns including a robust Turn Management System, A* Pathfinding algorithms for grid navigation, and Finite State Machine (FSM) driven enemy AI that evaluates tactical advantages.",
-        tech: ["C#", "Unity", "A* Pathfinding", "FSM AI"], // Teknoloji stack'ini Unity/C# olarak güncelledim
+        tech: ["C#", "Unity", "A* Pathfinding", "FSM AI"],
         githubLink: "https://github.com/TugberkKaradag/Precision-Warfare---Tactical-Engagements",
         demoType: 'image',
-        demoUrl: "./precision.jpeg", // Strateji/Satranç benzeri taktiksel bir görsel
+        demoUrl: "/precision.jpeg",
         color: "from-orange-500 to-red-600"
     },
     {

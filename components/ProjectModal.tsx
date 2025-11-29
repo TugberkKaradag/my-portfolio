@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Project } from '@/data/projects';
 import { X, Github, ExternalLink } from 'lucide-react';
@@ -44,7 +44,7 @@ export default function ProjectModal({ selectedProject, onClose }: ProjectModalP
                             </button>
 
 
-                            <div className="w-full md:w-1/2 bg-black flex items-center justify-center bg-grid-white/[0.05] relative overflow-hidden h-64 md:h-auto border-b md:border-b-0 md:border-r border-white/10">
+                            <div className="relative w-full h-full md:w-1/2 md:h-auto flex items-center justify-center bg-black rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none overflow-hidden">
                                 {selectedProject.demoType === 'video' ? (
                                     <video
                                         src={selectedProject.demoUrl}
@@ -56,11 +56,12 @@ export default function ProjectModal({ selectedProject, onClose }: ProjectModalP
                                     />
                                 ) : (
                                     // eslint-disable-next-line @next/next/no-img-element
-                                    <img
+                                    <Image
                                         src={selectedProject.demoUrl}
                                         alt={selectedProject.title}
-
-                                        className="w-full h-full object-contain bg-black"
+                                        fill
+                                        className="object-contain bg-black"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
                                     />
                                 )}
 
