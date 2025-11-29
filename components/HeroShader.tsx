@@ -58,8 +58,6 @@ const WaveShaderMaterial = shaderMaterial(
       float dist = distance(vUv, uMouse);
       vDist = dist;
 
-      // HAREKET LOGİĞİ:
-      // uTime artık çok daha yavaş arttığı için buradaki dalgalar ağır ağır süzülecek.
       float largeWave = snoise(vec2(pos.x * 0.2 + uTime * 0.1, pos.y * 0.2 + uTime * 0.05));
       float smallWave = snoise(vec2(pos.x * 2.0 - uTime * 0.5, pos.y * 2.0));
 
