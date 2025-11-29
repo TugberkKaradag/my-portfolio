@@ -5,6 +5,8 @@ import CustomCursor from "@/components/CustomCursor";
 import * as THREE from 'three';
 import { extend } from '@react-three/fiber';
 import { shaderMaterial } from '@react-three/drei';
+import { Analytics } from "@vercel/analytics/next"
+<Analytics />
 const rajdhani = Rajdhani({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
